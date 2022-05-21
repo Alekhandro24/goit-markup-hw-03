@@ -65,11 +65,10 @@ body {
 .page-nav {
     display: flex;
     align-items: center;
-    /* margin-left: 15px; */
 }
 
 .logo {
-    /* margin-right: 93px; */
+    margin-right: 93px;
     text-decoration: none;
     font-family: Raleway, sans-serif;
 
@@ -91,9 +90,7 @@ body {
 
 .site-nav {
     display: flex;
-    /* display: block; */
-    margin-left: 93px;
-    
+    margin-left: 93px;   
 }
 
 .site-nav .link {
@@ -311,6 +308,10 @@ body {
 
 /* < !-- Чем мы занимаемся --> */
 
+.work-section {
+    /* padding-bottom: 94px; */
+}
+
 .work-list {
     display: flex;
     align-items: center;
@@ -321,7 +322,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 
 }
 
@@ -440,8 +441,15 @@ footer {
 } 
 
 
+/* 
+----------------portfolio---------portfolio----------portfolio---------- */
 
-/* portfolio */
+
+
+.portfolio-page-header {
+    background-color: grey;
+}
+
 
 .portfolio-list .title {
     color: var(--title-text-color);
@@ -464,7 +472,41 @@ footer {
     text-decoration: none;
 } 
 
+
+
+
+/* -----portfolio button------- */
+
+.portfolio-conteiner {
+
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: crimson;
+
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 59px;
+    margin-bottom: 35px;
+
+
+    outline: 2px solid tomato;
+    background-color: aqua;
+}
+
 .hero-portfolio .button {
+    display: inline-block;
+    padding: 6.17px 22px;
+    align-items: center;
+    border-radius: 4px;
+
     color: var(--sitenav-text-color);
     background-color: var(--portfolio-button-bgc);
 
@@ -474,13 +516,51 @@ footer {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    outline: 2px solid tomato;
 }
+
+
+.portfolio .item + .item {
+    margin-left: 30px;
+    align-items: center;
+}
+
+
 
 .hero-portfolio .button:hover,
 .hero-portfolio .button:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color); 
 }
+
+
+
+/* -----portfolio list----- */
+
+/* .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: darkorange;
+}   */
+
+
+/* .portfolio-list .portfolio-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+
+
+    background: tomato;
+
+    /margin-right: 30px;  calc((100% - 60px) / 3)
+    
+} */
+
+/* .portfolio-list .portfolio-item {
+    list-style: none;
+} */
+
 
 .portfolio,
 .portfolio-list {
@@ -491,7 +571,17 @@ footer {
     list-style: none;
 }  
 
+.portfolio-list h2 {
+    margin: 20.57px 24px 4.11px;
+    
+}
+
+
+
+
 .portfolio-list p {
+
+    margin: 0 24px 20.57px;
 
     font-family: inherit;
     font-size: 16px;
